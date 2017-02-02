@@ -4,13 +4,17 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'index.js': /^app/,
-        'vendor.js': /^(?!app)/
+        'index.js':       /^app\/plugin/,
+        'demo/demo.js':   /^app\/demo/,
+        'demo/vendor.js': /(^bower_components|node_modules|vendor)\//
       }
     }
   },
   npm: {
-    static: ['node_modules/phaser-ce/build/phaser.js']
+    static: [
+      'node_modules/dat.gui/build/dat.gui.js',
+      'node_modules/phaser-ce/build/phaser.js',
+    ]
   },
   paths: {
     public: 'dist'

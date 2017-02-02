@@ -12,6 +12,8 @@
     "build": "brunch build --production"
   },
   "dependencies": {
+    "dat.gui": "^0.6.1",
+    "easystarjs": "git+https://github.com/prettymuchbryce/easystarjs.git",
     "phaser-ce": "^2.7.1"
   },
   "devDependencies": {

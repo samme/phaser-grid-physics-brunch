@@ -147,7 +147,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("gridPhysics/gridBody.js", function(exports, require, module) {
+require.register("plugin/gridPhysics/gridBody.js", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1084,13 +1084,13 @@ exports.default = gridBody;
 
 });
 
-require.register("gridPhysics/gridDebug.js", function(exports, require, module) {
+require.register("plugin/gridPhysics/gridDebug.js", function(exports, require, module) {
 /** All debug-stuff from Body and Physics will be moved here */
 "use strict";
 
 });
 
-require.register("gridPhysics/gridPhysics.js", function(exports, require, module) {
+require.register("plugin/gridPhysics/gridPhysics.js", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1484,10 +1484,10 @@ exports.default = GridPhysics;
 
 });
 
-require.register("plugin.js", function(exports, require, module) {
+require.register("plugin/plugin.js", function(exports, require, module) {
 'use strict';
 
-var _gridPhysics = require('gridPhysics/gridPhysics');
+var _gridPhysics = require('./gridPhysics/gridPhysics');
 
 var _gridPhysics2 = _interopRequireDefault(_gridPhysics);
 
